@@ -437,8 +437,8 @@ const getTaskEditTmplt = (classList = {classes: ['black'], text: 'This is exampl
 
 const getTaskListTmplt = () => {
   const cards = CARDS
-    .reduce((cards,classes) => {
-        return cards + `${getTaskCardTmplt(classes)}`;
+    .reduce((cards,data) => {
+        return cards + `${getTaskCardTmplt(data)}`;
     },``)
 
   return (
